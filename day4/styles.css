@@ -1,0 +1,149 @@
+*{
+  box-sizing: border-box;
+}
+
+/* General properties */
+body{
+  width: 90%;
+  margin: auto;
+}
+
+.box1, .box2, .box3{
+  width: 30%;
+  height: auto;
+  margin: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.textbox1, .textbox2, .textbox3{
+  position: absolute;
+}
+
+.image1, .image2, .image3{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.header1, .header2, .header3{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  font-size: 1.5em;
+  color: #694B29;
+  background-color: #efebe9;
+}
+
+.paragraph1, .paragraph2, .paragraph3_1, .paragraph3_2, .paragraph3_3{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.paragraph3_1, .paragraph3_2, .paragraph3_3{
+  font-size: 0.8em;
+  box-shadow: 5px 5px 5px black;
+  padding: 3%;
+  border-radius: 10px;
+  background-color:rgba(40, 64, 112, 0.9);
+  color: #efebe9;
+}
+
+/* PHOTO 1 */
+.image1{
+  filter: invert(90%);
+}
+
+.textbox1{
+  bottom: 0;
+  background-color: rgba(255, 200, 200, 0.5);
+  border: 1px solid #694B29;
+  box-shadow: 5px 5px 5px black;
+  padding: 5px;
+  border-radius: 4px;
+  max-height: 80%;
+  color: #694B29;
+}
+
+.paragraph1{
+  font-size: 1em;
+}
+
+/* PHOTO 2 */
+.image2{
+  filter: blur(2px);
+}
+
+.textbox2{
+  background-color: rgba(40, 64, 112, 0.8);
+  padding: 5%;
+  box-shadow: 20px 20px 50px black;
+  border-radius: 20px;
+  margin: 10px;
+  top: 20%;
+  bottom: 20%;
+  left: 20%;
+  right: 20%;
+  border: 2px dashed #efebe9;
+}
+
+.paragraph2{
+  font-size: .8em;
+  color: #efebe9; 
+}
+
+.details{
+  background-color: #efebe9;
+  padding: 4%;
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 50%;
+  box-shadow: 20px 20px 50px black;
+  border-radius: 20px;
+  font-size: .8em;
+  color: #694B29;
+}
+
+/* PHOTO 3 */
+.image3{
+  filter: sepia(40%);
+ }
+
+.header3{
+  background-color: #efebe9;
+  border: 1px solid #694B29;
+  margin: auto;
+  box-shadow: 5px 5px 5px black;
+  padding: 5px;
+  border-radius: 4px;
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 40%;
+  bottom: 40%;
+  width: 40%;
+  position: absolute;
+  height: 40px;
+}
+
+.paragraph3_1{
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 40%;
+}
+ 
+ .paragraph3_2{
+  position: absolute;
+  top: 0;
+  right: 5%;
+  width: 40%;
+}
+
+.paragraph3_3{
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  left: 10%;
+  width: 80%;
+ }
+/* Couldn't do gradient on image 3 */
+

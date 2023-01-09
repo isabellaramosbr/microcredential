@@ -1,0 +1,274 @@
+*{
+  box-sizing: border-box;
+}
+
+.name{
+  color: salmon;
+}
+
+.lake{
+  width: 500px;
+}
+
+.thunder{
+  width: 500px;
+}
+/* section for landscape */
+.container{
+  background-color:whitesmoke;
+  padding: 2em;
+  
+  
+}
+
+.title{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: lightgray;
+  border: 2px solid lightgray;
+  padding: 1em;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  box-shadow: 5px 0px 20px lightgray;
+  border-radius: 10px;
+}
+
+.image1, .image2, .image3, .image4{
+  width: 45%;
+  margin-top: 2em;
+  box-shadow: 0px 5px 10px gray;
+  margin: 1em;
+}
+
+.image1{
+  border-radius: 24px;
+}
+
+.image2{
+  border-radius: 50%;
+}
+
+.image3{
+  border: 1px solid green;
+  padding: 1em;
+}
+
+.image4{
+  box-shadow: 0px 5px 10px gray;
+}
+
+.qcclink{
+  background-color: darkcyan;
+  color: white;
+  display: block;
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.1em;
+  padding: 1.5em;
+  border-radius: .5em;
+  box-shadow: 0px 5px 10px gray;
+}
+
+.qcclink:hover{
+  background-color: lightcyan;
+  color: darkcyan;
+  border: 1px solid darkcyan;
+  box-shadow: 0px 5px 10px gray;
+}
+
+/* navigation tabs */
+
+.link{
+  text-decoration: none;
+  background-color: bisque;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1em;
+  margin: 1em auto;
+  width: 50%;
+  border-radius: .5em;
+  }
+
+  .vertical{
+    list-style-type: none;
+  }
+
+  .link:hover{
+    background-color: darkcyan;
+    color: white;
+    border: .5px solid black;
+  
+  }
+
+  .horizontal{
+    background-color: rebeccapurple;
+    position: fixed;
+    top: 0px;
+    border: 1px solid red;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  
+  }
+
+  .link2{
+    color: whitesmoke;
+    padding: 1em;
+    display: inline-block;
+    width: 33%;
+  }
+
+  .link2:hover{
+    background-color:coral;
+    text-decoration: none;
+  }
+
+  /* microsoft logo */
+
+  .box{
+    width: 225px;
+    height: 225px;
+    background-color: rgb(243, 243, 243);
+    margin: 20px auto;
+    display: flex;
+
+  }
+
+  .square1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(243, 82, 32);
+    margin-bottom: 10px;
+  
+  }
+
+  .square2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(5, 166, 240);
+  }
+  .square3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(129, 188, 6);
+    margin-bottom: 10px;
+  }
+  .square4{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 186, 8);
+  }
+
+  .one, .two { 
+    margin: auto;
+}
+
+/* POSITIONS */
+.pos{
+  border: 5px ridge greenyellow;
+  margin: auto;
+  width: 50%;
+  position: relative;
+}
+
+.position_img{
+  width: 100%;
+  display: block;
+ 
+}
+
+.paragraph{
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  right: 20%;
+  text-align: center;
+  background-color: rgba(0, 87, 127, 0.8);
+  padding: 1em;
+  margin: 0px;
+  font-size: 2em;
+  color: #f5f5f5;
+}
+
+.stickyh1{
+  background-color: black;
+  color: white;
+  position: sticky;
+  bottom: 0px;
+  padding: .5em;
+  text-align: center;
+  font-size: 1em;
+}
+
+.zcontainer{
+  position: relative;
+  border: 10px solid tomato;
+  display: flex;
+  height: 500px;
+}
+
+.zimage1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.zimage2{
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  z-index: 1;
+}
+
+.zparagraph{
+  font-size: 1.5em;
+  position: absolute;
+  z-index: 2;
+  color: white;
+}
+
+.blur1, .blur2, .blur3, .sepia1, .sepia2, .sepia3, .inverted1, .inverted2, .inverted3 {
+  width: 30%;
+  margin-left: 2%;
+}
+
+
+.blur1{
+  filter: blur(1px);
+}
+
+.blur2{
+  filter: blur(10px);
+}
+
+.blur3{
+  filter: blur(20px);
+}
+
+.sepia1{
+  filter: sepia(10%);
+}
+
+.sepia2{
+  filter: sepia(60%);
+}
+
+.sepia3{
+filter: sepia(100%);
+}
+
+.inverted1{
+  filter: invert(20%);
+}
+
+.inverted2{
+  filter: invert(60%);
+}
+
+.inverted3{
+filter: invert(100%);
+}
