@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 8 - Isabella Ramos</title>
+</head>
+<body>
+
+    <!-- Java Script -->
+    <h1>Isabella Ramos</h1>
+  <script>
+
+/*
+    let firstName;
+    let x=100;
+    let y= -1.5, z= 7;
+    let boolean1 = true;
+    let boolean2 = false;
+    let lastName;
+    let name = null;
+    
+    firstName= 'Maria';
+    firstName= "Peter";
+
+    console.log('Hello there!');
+    console.log(firstName, y);
+    console.log('firstName = ', firstName);
+    console.log(firstName + ' is my first name');
+    console.log(`${firstName} is my frist name`);
+
+    let fullName = prompt('Please enter a name:');
+    console.log(`The entered name is: ${fullName}`);
+
+    let num1 = parseInt( prompt('Enter number 1: '));
+    let num2 = prompt('Enter number 2: ');
+
+    num2 = parseInt(num2);
+    let sum = num1 + num2;
+    let allUpperCase = fullName.toUpperCase();
+    console.log(allUpperCase);
+
+    let myString = "Queensborough Community College";
+    console.log(myString);
+    let stringLocation = myString.search('Co');
+    console.log(`The index location for CO is${stringLocation}`);
+
+    // REMOVE WHITE SPACE IN A STRING//
+
+    let name1= '    William    Smith';
+
+    //SUBTRACTING CHARACTERS //
+  
+    let subWord = myString.substr(6, 7);
+    console.log(subWord);
+
+
+    //FIRST FIND THE POSITION OF THE WORD AND THEN SUBTRACT 5 CHARACTERS FROM THE WORD//
+
+    let findFirst = myString.search('Com');
+    let subSec = myString.substr(findFirst, 5);
+    console.log(subSec);
+
+    //EXTRACT CHARACTERS FROM A STRING //
+    let extractCharacter = myString.slice(6);
+    console.log(`The extract characters are ${extractCharacter}`);
+
+    // ARRAYS //
+
+    let fruits;
+    fruits = ["apples", 'oranges', 'bananas', 'grapes'];
+
+    let cars =['Nissan', 'Tesla', 'Mazda', 'Mercedez']
+    let mixedItems = [65, true, 'cats'];
+   
+
+    console.log(cars);
+    console.log(mixedItems);
+    console.log(`The second item in array fruits is: ${fruits[1]}`);
+
+    //nesting arrays //
+    let countries =['Canada', 'USA', ['Mexico', 'Panama', 'Brazil'] ];
+    console.log(countries);
+    console.log(countries [2][2]);
+
+    // creating a copy of an array // 
+    let newItems = mixedItems; //direct copy: link update//
+    let newItemsSlice = mixedItems.slice(); //make an independent copy: updates are not linked //
+
+
+    //find the second character on a third item'
+    let indexCats = mixedItems.indexOf('cats'); 
+   */
+
+  
+    // ACTIVITY 5 //
+
+    console.log('---Activity 5.1 - variables, strings, and arrays ---');
+    let firstName = prompt('Please enter your first name:');
+    let num = prompt('Enter a lucky number: ');
+    console.log('Welcome to the program ' + firstName + '.' + ' Your lucky number is ' + num);
+    console.log(`Good Morning ${firstName}!`, ` Your entered number: ${num}.`);
+
+    
+    console.log('---Activity 5.2- String and string methods ---');
+    let Fruits = prompt('Please enter your favorite fruit') ;
+    let findFirst = Fruits.search(1);
+    let allUpperCase = Fruits.toUpperCase();
+    let extractCharacters = Fruits.slice(-2);
+
+   
+    console.log(`a) The second letter of the word ${Fruits} is ` + (Fruits [1]));
+    console.log(`b) The length of word ${Fruits}` + ' is ' + (Fruits.length));
+    console.log(allUpperCase);
+    console.log(`d) The last two characters of the word ${Fruits} are ${extractCharacters}`);
+
+    
+    var mixedArray =['countries', 10, false, 'colors', 'cars'];
+    let Animal = prompt('Please enter your favorite animal') ;
+    let Nnumber = prompt('Please enter a negative number');
+    console.log('---Activity 5.3 - Arrays and array methods ---');
+    console.log(`a) Mixed array with initial values: ` + (mixedArray));
+    console.log(`b) Mixed array with an new animal added to the end: ` + (mixedArray), (Animal));
+    console.log('c) Mixed array with a new NEGATIVE NUMBER added to the front, beginning, of the array: ' + (Nnumber) + (mixedArray));
+    var copyArray = mixedArray.slice();
+    console.log(`d) Mixed array: ${copyArray} and reverse of copy array: ${copyArray.reverse()}`);
+
+
+
+  </script>
+</body>
+</html>
