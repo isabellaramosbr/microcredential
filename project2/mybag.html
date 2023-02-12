@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Bag | Project 2 - Isabella Ramos </title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script defer src="js/bootstrap.js"></script>
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<ul class="nav nav-fill bg-dark">
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.maccosmetics.com/holiday-deals" target="_blank">Sales</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.maccosmetics.com/collections" target="_blank">New</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.maccosmetics.com/lips" target="_blank">Lips</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.maccosmetics.com/skincare" target="_blank">Skin</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.maccosmetics.com/eye-makeup" target="_blank">Eyes</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav-icon" href="mybag.html">My Bag<img src="images/bag.svg" class="icon-nav" alt="shopping bag icon"></a>
+</ul>
+
+
+<!-- CHECKOUT LIST -->
+
+  <section class="container-checkout">
+    <div class="table-responsive-lg">
+      <table class="table caption-top">
+        <thead>
+          <caption><p class="table-header"> My bag</p1> </caption>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col"></th>
+            <th scope="col">Item</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="item1">
+            <td scope="row">1</td>
+            <td><img src="images/thumbnail1.avif" class="img-thumbnail detail" alt="product preview"></td>
+            <td class="item">LIPSTICK / WAKANDA FOREVER</td>
+            <td> <input type="number" class="qty" name="Quantity" value="1"></td>
+            <td class="price">$13.80</td>
+            <td class="fa fa-trash-o" onclick="toggleDisplay1()"></td>
+         
+          </tr>
+          <tr id="item2">
+            <td scope="row">2</td>
+            <td><img src="images/thumbnail2.avif" class="img-thumbnail detail" alt="product preview"></td>
+            <td class="item" >POWDER KISS LIQUID LIPCOLOUR</td>
+            <td> <input type="number" class="qty" name="Quantity" value="1"></td>
+            <td class="price">$18.20</td>
+            <td class="fa fa-trash-o" onclick="toggleDisplay2()"></td>
+          </tr>
+          <tr id="item3">
+            <td scope="row">3</td>
+            <td><img src="images/thumbnail3.avif" class="img-thumbnail detail"></td>
+            <td class="item">EYE SHADOW</td>
+            <td> <input type="number" class="qty" name="Quantity" value="1"></td>
+            <td class="price">$14.70</td>
+            <td class="fa fa-trash-o" onclick="toggleDisplay3()"></td>>
+          </tr>
+          <tr id="item4">
+            <td scope="row">4</td>
+            <td><img src="images/thumbnail4.avif" class="img-thumbnail detail" alt="product preview"></td>
+            <td class="item">POWDER KISS LIQUID LIPCOLOUR</td>
+            <td> <input type="number" class="qty" name="Quantity" value="1"></td>
+            <td class="price">$18.20</td>
+            <td class="fa fa-trash-o" onclick="toggleDisplay4()"></td>
+          </tr>
+          <tr id="item5">
+            <td scope="row">5</td>
+            <td><img src="images/thumbnail5.avif" class="img-thumbnail detail" alt="product preview"></td>
+            <td class="item">SPARKLER EYE SHADOW</td>
+            <td> <input type="number" class="qty" name="Quantity" value="1"></td>
+            <td class="price">$15.00</td>
+            <td class="fa fa-trash-o" onclick="toggleDisplay5()"></td>
+          </tr>
+          <tr id="item6">
+            <td scope="row">6</th>
+            <td><img src="images/thumbnail6.avif" class="img-thumbnail detail" alt="product preview"></td>
+            <td class="item">ART LIBRARY: IT'S DESIGNER</td>
+            <td> <input type="number" class="qty" name="Quantity" value="1"></td>
+            <td class="price">$29.40</td>
+            <td class="fa fa-trash-o" onclick="toggleDisplay6()"></td>
+          </tr> 
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+<!-- CHECKOUT INFO -->
+<!-- checkout info | shipping -->
+<section class="container-checkout-info">
+  <div class="container checkoutbtn">
+    <p class="table-header"> Shipping Info</p1>
+  <form class="row g-3">
+    <div class="col-md-6">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+    </div>
+    <div class="col-md-6">
+      <label for="email" class="form-label">E-mail</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter your e-mail">
+    </div>
+
+    <div class="col-md-4">
+      <label for="city" class="form-label">City</label>
+      <input type="text" class="form-control" id="city" placeholder="New York">
+    </div>
+
+    <div class="col-md-4">
+      <label for="state" class="form-label">State</label>
+      <select class="form-select" id="state">
+        <option selected disabled value="">Choose...</option>
+        <option value="NY">NY </option>
+        <option value="NJ">NJ</option>
+        <option value="PA">PA</option>
+      </select>
+    </div>
+
+    <div class="col-md-4">
+      <label for="zip" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="zip"placeholder="10001">
+    </div>
+  </form>
+</div>
+
+<!-- checkout info | payment -->
+<div class="container checkoutbtn">
+  <p class="table-header"> Payment</p1>
+  <form class="row g-3">
+    <div class="col-md-6">
+      <label for="namecc" class="form-label">Name on card</label>
+      <input type="text" class="form-control" id="namecc" placeholder="Name must match card">
+    </div>
+    <div class="col-md-6">
+      <label for="ccn" class="form-label">Credit card number</label>
+      <input type="text" class="form-control" id="ccn" placeholder="1111-2222-3333-4444">
+    </div>
+
+    <div class="col-md-4">
+      <label for="exp" class="form-label">Expiration date</label>
+      <input type="text" class="form-control" id="exp" placeholder="00/0000">
+    </div>
+    <div class="col-md-4">
+      <label for="ccv" class="form-label">CCV</label>
+      <input type="text" class="form-control" id="ccv" placeholder="000">
+    </div>
+
+    <div class="col-12">
+      <button type="button" class="pay" onclick="location.href='shipped.html'">Pay </button>
+    </div>
+  </form>
+
+</div>
+</section>
+      
+
+
+<!-- PAGE FOOTER -->
+<div class="footer">
+  <div class="container">
+    <h2 id="contact"> Social Media</h2>
+    <p>Connect on</p>
+
+    <div class="containermedia">
+      <a href="http://www.facebook.com/MACcosmetics" target="_blank" class="fa fa-facebook"></a>
+      <a href="http://instagram.com/maccosmeticsusa" target="_blank" class="fa fa-twitter"></a>
+      <a href="http://www.youtube.com/user/MACcosmetics" target="_blank" class="fa fa-google"></a>
+      <a href="https://twitter.com/MACcosmetics" target="_blank" class="fa fa-linkedin"></a>
+    </div>
+    <p>© MAKE-UP ART COSMETICS. ALL WORLDWIDE RIGHTS RESERVED.</p>
+  </div>
+</div>
+
+
+
+
+<script defer src="script.js"></script>
+</body>
+</html>

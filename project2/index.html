@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Project 2 - Isabella Ramos</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script defer src="js/bootstrap.js"></script>
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+  
+<body>
+
+<!-- NAVIGATION -->
+<ul class="nav nav-fill bg-dark">
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.maccosmetics.com/holiday-deals" target="_blank">Sales</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.maccosmetics.com/collections" target="_blank">New</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.maccosmetics.com/lips" target="_blank">Lips</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.maccosmetics.com/skincare" target="_blank">Skin</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.maccosmetics.com/eye-makeup" target="_blank">Eyes</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav-icon" href="mybag.html">My Bag<img src="images/bag.svg" class="icon-nav" alt="shopping bag icon"></a>
+  </li>
+</ul>
+
+<!-- CAROUSEL -->
+<div class="carousel">
+
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  
+    <div class="carousel-inner"> 
+
+<!-- carousel | text box  -->
+      <div class="text-center">
+        <p class="title">Limited time offer</p>
+        <p class="text">30% off selected lip products</p>
+        <a href="#bestsellers" class="btn" >Best sellers</a>
+       </div>
+       
+      <figure class="carousel-item active">
+        <img src="images/hero1.jpg" class="figure" alt="product slide">
+      </figure>
+      <figure class="carousel-item">
+        <img src="images/hero2.jpg" class="figure" alt="product slide">
+      </figure>
+      <figure class="carousel-item">
+        <img src="images/hero3.jpg" class="figure" alt="product slide">
+      </figure>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+
+<!-- THUMBNAILS -->
+<div class="container">
+  <div class="card-title" id="bestsellers"> Best sellers</div>
+  <div class="row row-cols-1 row-cols-2 row-cols-3">
+
+<!-- Thumbnail 1 -->
+
+  <div class="mt-3 card">
+    <img src="images/thumbnail1.avif" onmouseover="this.src='images/thumbnail1-hover.avif'" onmouseout="this.src='images/thumbnail1.avif'" class="img-fluid" alt="lipstick">
+  <section class="card-body">
+    <h2 class="card-title">LIPSTICK / WAKANDA FOREVER</h2>
+    <p class="card-subtitle">$13.80</p>
+    <p class="card-text">New rich shades, matte/amplified textures, special-edition packaging</p>
+  </section>
+  <div class="card-footer">
+    <button type="button" class="btn btn-primary onclick add-to-cart" data-bs-toggle="modal" data-bs-target="#modal1"> ADD TO BAG</button>     </div>
+  </div>
+  
+<!-- Thumbnail 2 -->
+  <div class="mt-3 card">
+    <img src="images/thumbnail2.avif" onmouseover="this.src='images/thumbnail2-hover.avif'" onmouseout="this.src='images/thumbnail2.avif'" class="img-fluid" alt="liquid lipstick">
+  <section class="card-body">
+    <h2 class="card-title">POWDER KISS LIQUID LIPCOLOUR</h2>
+    <p class="card-subtitle">$18.20</p>
+    <p class="card-text">Moisture-matte liquid lipcolour, soft-focus/blurred colour, 10-hour weightless moisture</p>
+  </section>
+  <div class="card-footer">
+    <button type="button" class="btn btn-primary onclick" data-bs-toggle="modal" data-bs-target="#modal2"> ADD TO BAG</button>
+     </div>
+  </div>
+
+<!-- Thumbnail 3 -->
+
+  <div class="mt-3 card">
+    <img src="images/thumbnail3.avif" onmouseover="this.src='images/thumbnail3-hover.avif'" onmouseout="this.src='images/thumbnail3.avif'" class="img-fluid" alt="eye shadow">
+  <section class="card-body">
+    <h2 class="card-title">EYE SHADOW</h2>
+    <p class="card-subtitle">$14.70</p>
+    <p class="card-text">Rich colour, professional, iconic - A highly pigmented powder that applies evenly and blends well</p>
+  </section>
+  <div class="card-footer">
+    <button type="button" class="btn btn-primary onclick" data-bs-toggle="modal" data-bs-target="#modal3"> ADD TO BAG</button>
+     </div>
+  </div>
+
+<!-- Thumbnail 4 -->
+
+  <div class="mt-3 card">
+    <img src="images/thumbnail4.avif" onmouseover="this.src='images/thumbnail4-hover.avif'" onmouseout="this.src='images/thumbnail4.avif'" class="img-fluid" alt="lipstick">
+  <section class="card-body">
+    <h2 class="card-title">LOVE ME LIQUID LIPCOLOUR</h2>
+    <p class="card-subtitle">$18.20</p>
+    <p class="card-text">Rich/creamy liquid colour, long-wearing satin finish, infused with argan oil/shea butter</p>
+  </section>
+  <div class="card-footer">
+    <button type="button" class="btn btn-primary onclick" data-bs-toggle="modal" data-bs-target="#modal4"> ADD TO BAG</button>
+     </div>
+  </div>
+
+<!-- Thumbnail 5 -->
+  <div class="mt-3 card">
+    <img src="images/thumbnail5.avif" onmouseover="this.src='images/thumbnail5-hover.avif'" onmouseout="this.src='images/thumbnail5.avif'" class="img-fluid" alt="eye shadow">
+  <section class="card-body">
+    <h2 class="card-title">SPARKLER EYE SHADOW</h2>
+    <p class="card-subtitle">$15.00</p>
+    <p class="card-text">Holiday-exclusive product, brilliant sparkly finish, buildage coverage</p>
+  </section>
+  <div class="card-footer">
+    <button type="button" class="btn btn-primary onclick" data-bs-toggle="modal" data-bs-target="#modal5"> ADD TO BAG</button>
+     </div>
+  </div>
+
+<!-- Thumbnail 6 -->
+  <div class="mt-3 card">
+    <img src="images/thumbnail6.avif" onmouseover="this.src='images/thumbnail6-hover.avif'" onmouseout="this.src='images/thumbnail6.avif'" class="img-fluid" alt="eye shadow palette">
+  <section class="card-body">
+    <h2 class="card-title">ART LIBRARY: IT'S DESIGNER</h2>
+    <p class="card-subtitle">$29.40</p>
+    <p class="card-text">12 colourful shades, versatile, full-sized shadows, $84 value</p>
+  </section>
+    <div class="card-footer">
+      <button type="button" class="btn btn-primary onclick" data-bs-toggle="modal" data-bs-target="#modal6"> ADD TO BAG</button>
+     </div>
+  </div>
+</div>  
+</div>
+
+
+<!-- MODALS -->
+
+<!-- Modal  1 -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal5" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-6" >Added to your bag! </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <section class="modal-body">
+        <div class="imagecontainer"> 
+          <img class="img-thumbnail" src="images/thumbnail1.avif" alt="lipstick">
+        </div>
+        <div class="container-fluid">
+          <h2 class="h2">LIPSTICK / WAKANDA FOREVER</h2>
+          <p class="p-1">3GM / 0.1OZ</p>
+          <p class="p-2">A curated lineup of four new lipstick shades in Amplified and Matte textures, shielded in special- edition Black Panther-inspired packaging.</p>
+          <p class="p-3">U$13.80</p>
+          <p class="p-4">NEW RICH SHADES, MATTE/AMPLIFIED TEXTURES, SPECIAL-EDITION PACKAGING</p>
+        </div>
+      </section>
+      <div class="modal-footer">
+        <button type="button" class="btn-secondary" data-bs-dismiss="modal">Keep shopping</button>
+        <button type="button" class="btn-outline-secondary checkout" data-bs-dismiss="modal">Check out</button>
+      </div>
+      </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-6" >Added to your bag! </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <section class="modal-body">
+        <div class="imagecontainer"> 
+          <img class="img-thumbnail" src="images/thumbnail2.avif" alt="liquid lipstick">
+        </div>
+        <div class="container-fluid">
+          <h2 class="h2">POWDER KISS LIQUID LIPCOLOUR</h2>
+          <p class="p-1">.17 OZ / 5 ML</p>
+          <p class="p-2">A liquid lipcolour with a whipped, mousse-like texture that delivers Soft-focus moisture-matte, comfortable colour with ten hours of hydration.</p>
+          <p class="p-3">U$18.20</p>
+          <p class="p-4">MOISTURE-MATTE LIQUID LIPCOLOUR, SOFT-FOCUS/BLURRED COLOUR, 10-HOUR WEIGHTLESS MOISTURE</p>
+        </div>
+      </section>
+      <div class="modal-footer">
+        <button type="button" class="btn-secondary" data-bs-dismiss="modal">Keep shopping</button>
+        <button type="button" class="btn-outline-secondary checkout" data-bs-dismiss="modal">Check out</button>
+      </div>
+      </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal5" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-6" >Added to your bag! </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <section class="modal-body">
+        <div class="imagecontainer"> 
+          <img class="img-thumbnail" src="images/thumbnail3.avif" alt="eye shadow">
+        </div>
+        <div class="container-fluid">
+          <h2 class="h2">DAZZLESHADOW EXTREME</h2>
+          <p class="p-1">1.5 G / .05 OZ</p>
+          <p class="p-2">An eye shadow with a molten metallic finish that features one-swipe saturation and 12-hour staying power.</p>
+          <p class="p-3">U$14.70</p>
+          <p class="p-4">MOLTEN METALLIC FINISH, ONE-SWIPE COLOUR PAYOFF, 12-HOUR WEAR</p>
+        </div>
+      </section>
+      <div class="modal-footer">
+        <button type="button" class="btn-secondary" data-bs-dismiss="modal">Keep shopping</button>
+        <button type="button" class="btn-outline-secondary checkout" data-bs-dismiss="modal">Check out</button>
+      </div>
+      </div>
+    </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal5" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-6" >Added to your bag! </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <section class="modal-body">
+        <div class="imagecontainer"> 
+          <img class="img-thumbnail" src="images/thumbnail4.avif" alt="eye shadow">
+        </div>
+        <div class="container-fluid">
+          <h2 class="h2">LOVE ME LIQUID LIPCOLOUR</h2>
+          <p class="p-1">.1 OZ / 3 ML</p>
+          <p class="p-2">A hydrating argan oil- and shea butter-infused, rich and creamy liquid lip colour with a satin finish that wears for 12 hours.</p>
+          <p class="p-3">U$26.00</p>
+          <p class="p-4">RICH/CREAMY LIQUID COLOUR, LONG-WEARING SATIN FINISH, INFUSED WITH ARGAN OIL/SHEA BUTTER</p>
+        </div>
+      </section>
+      <div class="modal-footer">
+        <button type="button" class="btn-secondary" data-bs-dismiss="modal">Keep shopping</button>
+        <button type="button" class="btn-outline-secondary checkout" data-bs-dismiss="modal">Check out</button>
+      </div>
+      </div>
+    </div>
+</div>
+
+<!-- Modal 5 -->
+<div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-6" >Added to your bag! </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <section class="modal-body">
+        <div class="imagecontainer"> 
+          <img class="img-thumbnail" src="images/thumbnail5.avif" alt="eye shadow">
+        </div>
+        <div class="container-fluid">
+          <h2 class="h2">SPARKLER EYE SHADOW</h2>
+          <p class="p-1">1.5 G / 0.05 OZ</p>
+          <p class="p-2">A limited-edition, holiday-exclusive eye shadow with a cream-like texture, brilliant sparkly finish and buildable coverage.</p>
+          <p class="p-3">U$15.00</p>
+          <p class="p-4">HOLIDAY-EXCLUSIVE PRODUCT, BRILLIANT SPARKLY FINISH, BUILDABLE COVERAGE</p>
+        </div>
+      </section>
+      <div class="modal-footer">
+        <button type="button" class="btn-secondary" data-bs-dismiss="modal">Keep shopping</button>
+        <button type="button" class="btn-outline-secondary checkout" data-bs-dismiss="modal">Check out</button>
+      </div>
+      </div>
+    </div>
+</div>
+
+<!-- Modal 6 -->
+<div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-6" >Added to your bag! </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <section class="modal-body">
+        <div class="imagecontainer"> 
+          <img class="img-thumbnail" src="images/thumbnail6.avif" alt="eye shadow palette">
+        </div>
+        <div class="container-fluid">
+          <h2 class="h2">ART LIBRARY: IT'S DESIGNER</h2>
+          <p class="p-1">17.2GM/.6OZ</p>
+          <p class="p-2">An eye palette developed by M∙A∙C Pro Artists in 12 runway-ready colours. $84 value.</p>
+          <p class="p-3">U$13.80</p>
+          <p class="p-4">12 COLOURFUL SHADES, VERSATILE, FULL-SIZED SHADOWS, $84 VALUE</p>
+        </div>
+      </section>
+      <div class="modal-footer">
+        <button type="button" class="btn-secondary" data-bs-dismiss="modal">Keep shopping</button>
+        <button type="button" class="btn-outline-secondary checkout" data-bs-dismiss="modal">Check out</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- PAGE FOOTER -->
+<div class="footer">
+  <div class="container">
+    <h2 id="contact"> Social Media</h2>
+    <p>Connect on</p>
+
+    <div class="containermedia">
+      <a href="http://www.facebook.com/MACcosmetics" target="_blank" class="fa fa-facebook"></a>
+      <a href="http://instagram.com/maccosmeticsusa" target="_blank" class="fa fa-twitter"></a>
+      <a href="http://www.youtube.com/user/MACcosmetics" target="_blank" class="fa fa-google"></a>
+      <a href="https://twitter.com/MACcosmetics" target="_blank" class="fa fa-linkedin"></a>
+    </div>
+    <p>© MAKE-UP ART COSMETICS. ALL WORLDWIDE RIGHTS RESERVED.</p>
+  </div>
+</div>
+
+
+
+<script defer src="script.js"></script>
+</body>
+</html>

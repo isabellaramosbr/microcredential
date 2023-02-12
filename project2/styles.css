@@ -1,0 +1,620 @@
+/* ------------------------ GENERAL SETTINGS ------------------- */
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+:root{
+  --bg-color-primary: #151a27;
+  --bg-color-hover: rgba(72, 54, 108, 0.8);
+  --color-primary: #f5f5f4;
+  --color-none: white;
+  --bg-color-complementary: rgb(242, 220, 248);
+  --color-grey: rgb(237, 232, 240);
+  --shadow-dark: 4px 4px 20px 4px rgb(12, 12, 12);
+  --shadow-light: 4px 4px 20px 4px rgb(196, 196, 196);
+}
+
+#bestsellers{
+  scroll-margin-top: 10vw;
+}
+
+/* ===============================================================*/
+/* ------------------------ NAVIGATION -------------------------- */
+/* ===============================================================*/
+
+.nav{
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100vw;
+  overflow: hidden;   
+}
+
+.nav-link{ 
+  color: var(--color-primary);
+  padding: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+}
+
+.nav-link:hover{
+  color:var(--color-primary);
+  background-color: var(--bg-color-hover);
+}
+
+.nav-item{
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-color-primary);
+}
+
+.logo{
+  background-color: var(--color-primary);
+  width: 80px;
+  height: auto;
+  padding: 2%;
+  border-radius: 5%;
+}
+
+.logo:hover{
+  background-color: rgba(242, 239, 249, 0.8);
+}
+
+
+
+.icon-nav{
+  max-width: 20px;
+  margin-left: 5%;
+}
+
+.nav-icon{
+  display: flex;
+  justify-content:center;
+}
+
+
+
+/* ===============================================================*/
+/* ------------------------- CAROUSEL --------------------------- */
+/* ===============================================================*/
+
+/* carousel | box & images */
+.carousel {
+  position: relative; 
+}
+
+.figure{
+  height: auto;
+  width: 100%;
+  z-index: -1;
+}
+
+/* carousel | text */
+.text-center{
+  background-color: rgba(10, 10, 10, 0.7);
+  color: var(--color-primary);
+  width:40%;
+  height: 40%;
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 30%;
+  right: 30%;
+  bottom: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.text{
+  font-size: 2vw;
+  text-transform: uppercase;
+}
+
+.title{
+  text-transform: uppercase;
+  border-bottom: inset var(--color-primary) 1px;
+  width: 80%;
+}
+
+
+/* carousel | buttons */
+.btn{
+  text-transform: uppercase;
+  color: var(--color-primary);
+  background-color: rgba(72, 54, 108, 0.8);
+  padding: 2% 10%;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+.btn:hover{
+  background-color: var(--color-primary);
+  color: var(--bg-color-hover);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  background-color: black;
+}
+
+
+
+/* ===============================================================*/
+/* ------------------------- THUMBNAILS ------------------------- */
+/* ===============================================================*/
+
+.container > .card-title{
+  margin-top: 10%;
+}
+
+.card-title{
+  font-size: 1.5rem;
+}
+
+.mt-3{
+  display: flex;
+  flex-direction: column;
+}
+
+.img-fluid{
+  background-color: var(--color-none);
+  width: 100%;
+}
+
+.card-body{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-footer{
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-grey);
+  padding: 5%;
+ }
+
+/* thumbnails | buttons */
+.btn-primary{
+  background-color: var(--bg-color-primary);
+  padding: 2% 10%;
+  text-align: center;
+  color:var(--color-primary);
+  border-radius: 50px;
+  border: none;
+}
+
+.btn-primary:hover{
+  background-color: var(--bg-color-hover);
+  color:var(--color-primary);
+}
+
+
+
+/* ===============================================================*/
+/* ------------------------ PAGE FOOTER  ------------------------ */
+/* ===============================================================*/
+
+.footer{
+  background-color: var(--bg-color-primary);
+  color: var(--color-primary);
+  width: 100%;
+  height: 30vh;
+  margin: 2% auto 0% auto;
+  padding: 10px;
+  text-align: center;
+}
+.container{
+  margin: 2% auto;
+  max-width: 80vw;
+}
+.container > p:last-child {
+  border-top: inset var(--color-primary) 1px;
+  padding: 1%;
+}
+
+/* page footer | social media */
+.containermedia{
+  margin: 50px auto;
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+.fa{
+  padding: 2%;
+  font-size: 30px;
+  width: 10%;
+  height: 10%;
+  text-align: center;
+  text-decoration: none;
+  color:var(--color-primary);
+  border-radius: 5%;
+}
+
+.fa:hover{
+  background-color: var(--bg-color-hover);
+}
+
+
+
+/* ===============================================================*/
+/* --------------------------- MODALS  -------------------------- */
+/* ===============================================================*/
+
+/* modal | background */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(12, 12, 12,0.7);
+  --bs-modal-width: inherit;
+}
+
+.modal-backdrop {
+  --bs-backdrop-zindex:-1;
+  --bs-backdrop-bg: none;
+}
+
+/* modal | content box */
+.modal-content {
+  background-color: var(--color-primary);
+  padding: 20px;
+  width: 40vw;
+  border: 1px solid #888;
+  border-radius: 20px;
+  border: 1px solid rgb(12, 12, 12);
+  box-shadow: var(--shadow-dark);
+  display: flex;
+  flex-direction: column;
+  margin: 10% auto;
+}
+
+.modal-body{
+  display: flex;
+  margin-left: 0;
+}
+
+.modal-header{
+  height: 20%;
+  background-color: var(--bg-color-complementary);
+  border-radius: 8px;
+}
+
+/* modal | close button */
+.btn-close {
+  background-color: var(--color-grey);
+  color: var(--bg-color-primary);
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  transition: ease-in-out 0.2s;
+  border-radius: 50%;
+  border: none;
+}
+
+.btn-close:hover{
+  background-color: var(--bg-color-hover);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* modal | image */
+.imagecontainer{
+  width: 40%;
+  height: auto;
+  padding: 10px;
+  display: block;
+  left: 0px;
+  position:relative;
+}
+
+.img-thumbnail{
+  width: 100%;
+  background-color: var(--color-primary);
+  border: 1px dotted black;
+}
+
+.container-fluid{
+  width: 60%;
+  text-align: center;
+  display: block;
+}
+
+/* modal | buttons */
+.modal-footer{
+  width: 100%;
+  justify-content: center;
+}
+
+.btn-secondary{
+  color: var(--color-primary);
+  background-color:rgb(152, 98, 191);
+  padding: 1%;
+  border-radius: 50px;
+  border: none;
+  width: 40%;
+}
+
+.btn-secondary:hover{
+  background-color:rgb(82, 40, 112);
+  transition: 300ms;
+}
+
+.btn-outline-secondary{
+  background-color: var(--color-grey);
+  color: #5b1f68;
+  padding: 1%;
+  border-radius: 50px;
+  border: none;
+  width: 40%;
+}
+
+.btn-outline-secondary:hover{
+  text-decoration: underline;
+  background-color: var(--bg-color-complementary);
+}
+
+
+/* modal | text */ 
+.fs-6{
+  text-align: center;
+  width: 100%;
+  margin-left: 10%;
+  padding: 2%;
+  text-transform: uppercase;
+  font-size: 1.5rem !important;
+}
+
+.h2{
+  font-size: 1.3rem;
+}
+
+.p-1{
+  color: var(--bg-color-hover);
+  text-align: right;
+}
+.p-3{
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.p-4{
+  border-top: 1px dotted var(--bg-color-primary);
+  border-bottom: 1px dotted var(--bg-color-primary);
+  text-transform: lowercase;
+}
+
+/* key frames */
+
+@keyframes modalprice {
+  0%   {font-size: 1rem; color: var(--bg-color-primary);}
+  50% {font-size: 2rem;color: var(--bg-color-hover); }
+}
+
+@keyframes shop {
+  0%   {background-color: var(--bg-color-primary);}
+  50% {background-color: var(--bg-color-hover); }
+}
+
+.p-3{
+  animation: modalprice 2s ease-in-out;
+}
+
+.btn-secondary{
+  animation: shop 3s ease;
+}
+
+/* ===============================================================*/
+/* -------------------------- CHECKOUT  ------------------------- */
+/* ===============================================================*/
+
+
+.container-checkout{
+  margin: 10% auto 2% auto;
+  width: 80vw;
+}
+
+.table-responsive-lg{
+  background-color: var(--color-primary);
+  box-shadow:var(--shadow-light);
+  border-radius: 20px;
+  width: 80vw;
+  margin: auto;
+  padding: 20px;
+}
+
+.form-label{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-align: left;
+  display: block;
+}
+
+.table-header{
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+
+}
+.container-checkout-info{
+  display: flex;
+  margin: auto;
+  width: 80vw;
+  justify-content: space-evenly;
+
+}
+/* check out | buttons & icons */
+.checkoutbtn{
+  width: 45%;
+  background-color: var(--color-primary);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: var(--shadow-light);
+
+}
+
+.pay{
+  padding: 5px 30px;
+  background-color: #5b1f68;
+  color: var(--color-primary);
+  border-radius: 50px;
+  border: none;
+  float: right;
+}
+
+.pay:hover{
+  background-color: #151a27;
+}
+
+.detail{
+  max-width: 100px;
+  min-width: 50px;
+}
+
+.qty{
+  width: 50px;
+}
+
+.fa-trash-o{
+  color: var(--bg-color-hover);
+  padding: 5%;
+  width: 50px;
+  font-size: 20px !important;
+  border: none;
+}
+
+.fa-trash-o:hover{
+  color: var(--color-none);
+  cursor: pointer;
+}
+
+.confirmation{
+  margin-top: 10%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ===============================================================*/
+/* ------------------------ MEDIA QUERIES  ------------------------ */
+/* ===============================================================*/
+
+
+@media screen and (max-width: 1000px){
+
+/* media query max 1000| thumbnails */
+.mt-3.card{
+  width: 40vw;
+}
+
+.img-fluid{
+  width: 75%;
+  margin: auto;
+}
+
+/* media query max 1000 | carousel */
+.text-center{
+  width: 60%;
+  height: 60%;
+  top: 20%;
+  left: 20%;
+  right: 20%;
+  bottom: 20%;
+}
+
+/* media query max 1000 | modals */
+.modal-content {
+  padding: 10px;
+  width: 70vw;
+}
+
+.imagecontainer{
+  width: 50%;
+}
+
+/* media query max 1000 | checkout */
+
+.container-checkout{
+  width: 90vw;
+}
+
+.table-responsive-lg{
+  width: 100%;
+}
+.item{
+  width:30vw;
+}
+
+.container-checkout-info{
+  width: 90vw;
+}
+
+.col-md-6, .col-md-4{
+  display: block;
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 600px){
+  
+/* media query max 600| thumbnails */
+.mt-3.card{
+width: 80vw;
+}
+
+.img-fluid{
+  width: 50%;
+
+}
+
+/* media query max 600| carousel */
+.text-center{
+  width: 70%;
+  height: 70%;
+  top: 20%;
+  left: 15%;
+  right: 15%;
+  bottom: 10%;
+}
+
+/* media query max 600 | modals */
+.modal-content {
+  padding: 10px;
+  width: 80vw;
+}
+
+.imagecontainer{
+  margin: auto;
+  width: 80%;
+}
+.modal-body{
+  flex-direction: column;
+}
+
+
+/* media query max 600 | checkout */
+
+.container-checkout-info{
+flex-direction: column;
+width: 100%;
+}
+
+.checkoutbtn{
+  width: 100%;
+}
+}
+
